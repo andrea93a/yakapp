@@ -1,0 +1,306 @@
+.background{
+	padding:85px 0;
+	background: url(../images/img-blue.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+}
+.background-home{
+	padding:85px 0;
+	background: url(../images/poli.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 70%;
+    width: 70%;
+}
+
+.logo-image {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.my-text-style{
+  font-size: 22px;
+  text-align: center;
+}
+  
+.my-button--outline{
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 4px 10px;
+
+  color: #0066FF;
+  text-shadow: 0 1px none;
+  background-color: rgba(0,0,0,0);
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 17px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  vertical-align:middle;
+}
+
+
+
+
+/*-- our-team --*/
+.our-team{
+	background: url(../images/4.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+	padding: 85px 0 125px 0;
+	}
+.team-info h2{
+		color:#000099;
+		margin:0;
+		text-align:center;
+		font-size: 35px;
+		font-weight:700;
+		}
+.team-info h2 span{
+	color:#000000;
+	}
+.team-info p{
+	color: #ffffff;
+	margin: 15px auto 70px auto;
+	width: 50%;
+	font-size: 16px;
+	text-align: center;
+		}
+.team-info h3{
+	margin:12px 0;
+	color:#000055;
+	font-size: 17px;
+	}
+.team-grid-info{
+	background:#ffffff;
+	padding: 15px;
+	}
+.team-grid-image img{
+	width:100%;
+	position:relative;
+	}
+.team-grid-image ul{
+	margin: 0;
+	padding: 0;
+	top: 51.9%;
+	left: 5.5%;
+	position: absolute;
+	}
+.team-grid-image ul li{
+	display: inline-block;
+	}
+.team-grid-image ul li a.fb{
+	background: url(../images/21.png) no-repeat 0px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+.team-grid-image ul li a.fb:hover{
+	background: url(../images/21.png) no-repeat -1px -35px;
+		transition:.5s all;
+		-webkit-transition:.5s all;
+		-moz-transition:.5s all;
+		-o-transition:.5s all;
+		-ms-transition:.5s all;
+	}
+.team-grid-image ul li a.twit{
+	background: url(../images/21.png) no-repeat -34px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+.team-grid-image ul li a.twit:hover{
+	background: url(../images/21.png) no-repeat -35px -35px;
+		transition:.5s all;
+		-webkit-transition:.5s all;
+		-moz-transition:.5s all;
+		-o-transition:.5s all;
+		-ms-transition:.5s all;
+	}
+.team-grid-image ul li a.linkin{
+	background: url(../images/21.png) no-repeat -69px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+.team-grid-image ul li a.linkin:hover{
+	background: url(../images/21.png) no-repeat -70px -35px;
+		transition:.5s all;
+		-webkit-transition:.5s all;
+		-moz-transition:.5s all;
+		-o-transition:.5s all;
+		-ms-transition:.5s all;
+	}
+.team-grid-image ul li a.be{
+	background: url(../images/21.png) no-repeat -105px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+.team-grid-image ul li a.be:hover{
+		background: url(../images/21.png) no-repeat -105px -35px;
+		transition:.5s all;
+		-webkit-transition:.5s all;
+		-moz-transition:.5s all;
+		-o-transition:.5s all;
+		-ms-transition:.5s all;
+	}
+.team-grid-info h3{
+	color:#333333;
+	font-size:18px;
+	margin:0;
+	font-weight:700;
+	}
+.team-grid-info p{
+	color:#999999;
+	font-size:16px;
+	margin:10px 0 0 0;
+	}
+@media(max-width:768px){
+	.our-team {
+		padding: 85px 0 100px 0;
+	}
+  	.container {
+    width: 750px;
+  }
+}
+@media(max-width:480px){
+.col-md-3.team-grid:nth-child(3) {
+		display: none;
+		}
+}
+/*-----cose per about-us-------*/
+.container {
+  padding-right: auto;
+  padding-left: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+span.highlight{
+	color:#000099;
+}
+
+
+
+/*-----timeline--------*/
+
+
+.reply-notification {
+  position: absolute;
+  right: 18px;
+  top: 28px;
+  font-size: 10px;
+  font-weight: 600;
+  height: 13px;
+  line-height: 13px;
+  padding: 0 4px;
+  min-width: 13px;
+}
+
+.tab-icon {
+  font-size: 28px;
+  vertical-align: -4px;
+}
+
+.timeline {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.timeline-li {
+  line-height: 1;
+  padding: 10px;
+}
+
+.timeline-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.timeline-date {
+  float: right;
+  font-size: 12px;
+  opacity: 0.35;
+}
+
+.timeline-from {
+  margin: 10px 0 6px 0;
+}
+
+.timeline-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.timeline-id {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.timeline-message {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.15;
+}
+
+
+/*-------Login------*/
+.form-row {
+  margin: 4px;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 48%;
+}
+
+.lucent {
+  opacity: 0.4;
+}
+
+.note {
+  margin: 12px 8px;
+  font-size: 13px;
+}
+
+.vspc {
+  margin-top: 20px;
+}
+
+.formarea {
+  width: 90%;
+  margin: 50px auto 0px auto;
+}
+
+input[type=text],
+input[type=password] {
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
