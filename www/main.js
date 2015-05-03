@@ -13,7 +13,7 @@ app.controller('controller', function($scope, $http, $localStorage, $interval) {
   $scope.cognome = $localStorage.last;
   $scope.matricola = $localStorage.id;
   $scope.main_page="home.html";
-  $scope.serverUrl="192.168.0.3:8080";
+  $scope.serverUrl="localhost:8080";
   if($scope.nome==null || $scope.cognome==null || $scope.matricola==null){
     $scope.main_page="login.html";
   }

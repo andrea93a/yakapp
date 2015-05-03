@@ -21,17 +21,17 @@ if you put the controller in a div its variables will be accessible only from th
   <link rel='stylesheet' href='fullcalendar/lib/cupertino/jquery-ui.min.css' />
   <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
   <link rel='stylesheet' href='fullcalendar/fullcalendar.print.css' media='print' />
- 
+
 <!-- libraries links -->
   <script src="lib/onsen/js/angular/angular.min.js"></script>
   <script src="lib/onsen/js/ngStorage.min.js"></script>
   <script src="cordova.js"></script>
   <script src="lib/onsen/js/onsenui.js"></script>
-  <script src='lib/moment.min.js'></script>  
-  <script src='lib/jquery.min.js'></script> 
+  <script src='lib/moment.min.js'></script>
+  <script src='lib/jquery.min.js'></script>
   <script src='fullcalendar/fullcalendar.min.js'></script>
-  
-  
+
+
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/bootstrap/js/ui-bootstrap-custom-tpls-0.12.1.js"></script>
 
@@ -84,6 +84,9 @@ if you put the controller in a div its variables will be accessible only from th
           <p class="note">Fill the gaps above with your information - ID number WITHOUT the initial 's'</p>
         </div>
 
+        <div class="form-row">
+          <input type="text-input" id="serverUrl" class="text-input--underbar width-full" placeholder="IP:8080" value={{serverUrl}} required>
+        </div>
         <div class="vspc form-row">
            <ons-button modifier="large--cta" ng-click="login()" >Sign up</ons-button>
         </div>
@@ -183,12 +186,6 @@ if you put the controller in a div its variables will be accessible only from th
         </ons-list-item>
       </ons-list>
 
-      <ons-list-item class="menu-item"  ng-click="openProfile(post.id)" onmouseover="style.color='grey'"
-        onmouseout="style.color='white'" > <!-- when you click on the name you pass the professor id to the function openProfile described in main.js -->
-          <ons-icon icon="ion-person" fixed-width="true" ></ons-icon>
-          Mucca10
-        </ons-list-item>
-      </ons-list>
 
       </div>
       <!---->
@@ -306,34 +303,34 @@ if you put the controller in a div its variables will be accessible only from th
 
 <!--BookNow comment page-->
 <ons-template id="booknow.html">
-<ons-page>
-  <ons-toolbar>
-    <div class="center">Book Now with {{" "+profProfile.nome+" "+profProfile.cognome}}</div>
+    <ons-page>
+      <ons-toolbar>
+        <div class="center">Book Now with {{" "+profProfile.nome+" "+profProfile.cognome}}</div>
 
-  <div class="right">				<!-- home button -->
-    <ons-toolbar-button ng-click="menu.setMainPage('home.html', {closeMenu: true})">
-      <ons-icon icon="ion-home" style="vertical-align: -4px; font-size: 23px;"></ons-icon>
-    </ons-toolbar-button>
-  </div>
-</ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button ng-click="menu.setMainPage('home.html', {closeMenu: true})">
+            <ons-icon icon="ion-home" style="vertical-align: -4px; font-size: 23px;"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        </ons-toolbar>
 
-  <div style="text-align: center">
+      <div style="text-align: center">
 
-    <section style="padding: 8px">
-        <p>{{matricola+" "+nome+" "+cognome}}</p>
-    </section>
+        <section style="padding: 8px">
+            <p>{{matricola+" "+nome+" "+cognome}}</p>
+        </section>
 
-    <section style="padding: 0 8px 8px">
-      <textarea id="messaggio" class="textarea" ng-model="text2" placeholder="Type here your message" style="width: 70%; height: 100px;"></textarea>
-    </section>
+        <section style="padding: 0 8px 8px">
+          <textarea id="messaggio" class="textarea" ng-model="text2" placeholder="Type here your message" style="width: 70%; height: 100px;"></textarea>
+        </section>
 
 
-      <section style="padding: 0 8px 8px">
-      <ons-button  modifier="medium" ng-click="book(profProfile.id)" style="width: 50%;">Confirm!</ons-button>
-      </section>
+            <section style="padding: 0 8px 8px">
+              <ons-button  modifier="medium" ng-click="book(profProfile.id)" style="width: 50%;">Confirm!</ons-button>
+            </section>
 
-  </div>
-</ons-page>
+      </div>
+    </ons-page>
 </ons-template>
 <!--//BookNow comment page-->
 
